@@ -1,3 +1,7 @@
+html,
+body {
+    overflow-x: hidden;
+}
 ul {
     margin: 0;
     padding: 0;
@@ -53,6 +57,10 @@ ul {
 
 .mt-28 {
     margin-top: 28px;
+}
+
+.pt-90 {
+    padding-top: 90px !important;
 }
 
 .template-btn {
@@ -148,20 +156,14 @@ mark {
     }
 
     & p {
-        font-size: 24px;
-        line-height: 1.25;
+        font-size: 18px;
+        line-height: 1.713;
         letter-spacing: -0.60px;
 
         @include lg {
-            font-size: 20px;
-            letter-spacing: -0.50px;
-        }
-
-        @include sm {
             font-size: 16px;
-            line-height: 24px;
             letter-spacing: -0.40px;
-            max-width: 382px;
+            max-width: 600px;
             margin: 0 auto;
         }
     }
@@ -216,8 +218,8 @@ mark {
     width: 45px;
     height: 45px;
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 30px;
+    bottom: 80px;
     cursor: pointer;
     z-index: 999992;
     border-radius: 50%;
