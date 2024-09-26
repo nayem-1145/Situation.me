@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situations.Me</title>
+
+    <link rel="icon" href="assets/images/favicon.jpg">
+
+    <!--essential style library-->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <!--header section start-->
+        <header class="st_header_section">
+            <div class="container st_header_box">
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-lg-4 col-7">
+                        <div class="st_header_logo">
+                            <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-5">
+                        <div class="st_header_right d-flex g-40 align-items-center justify-content-end">
+                            <nav class="st_header_nav">
+                                <ul>
+                                    <li><a class="scroll" href="home.html#how_it_works">How it works</a></li>
+                                    <li><a class="scroll" href="home.html#how_different">How we're different</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                </ul>
+                            </nav>
+                            <div class="st_header_btns d-flex gap-3 align-items-center justify-content-end">
+                                <a target="_blank" href="https://situations-596dcd59e0eb.herokuapp.com/" class="template-btn primary-btn">Try our prototype</a>
+                                <button type="button" class="st_mobile_menu_toggle menu_btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--header section end-->
+
+        <!-- Funnel works Start  -->
+        <section class="funnel_works_sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="#" method="post" name="situations-step-form">
+
+                            <h3 class="text-center">Try our core functionality and get a taste of what we plan to offer you soon!</h3>
+                            <!-- Progress bar -->
+                            <div class="progressbar">
+                                <div class="progress" id="progress"></div>
+                                <div class="progress_step progress_step_active" data-title="Introduce yourself"></div>
+                                <div class="progress_step" data-title="Describe your Situation"></div>
+                                <div class="progress_step" data-title="Additional Information"></div>
+                                <div class="progress_step" data-title="Strategies & Solutions"></div>
+                                <div class="progress_step" data-title="Share your Feedback!"></div>
+                            </div>
+
+                            <!-- Steps 1-->
+                            <div class="form_step form_step_active">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-5">
+                                        <div class="form_step_thumb text-center">
+                                            <img src="assets/images/form/step-1.png" alt="Introduce yourself" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form_step_content">
+                                            <h2>Please introduce yourself</h2>
+                                            <div class="step_info">
+                                                <img src="assets/images/idea.svg" alt="idea" class="img-fluid">
+                                                <p>We do not want to make wild guesses about you. Please describe yourself using as many or as little words as you are comfortable.</p>
+                                            </div>
+                                        </div>
+                                        <div class="form_step_field mn-height-420">
+                                            <div class="input-group">
+                                                <label class="form-label link" for="introduce-yourself"><a href="#modal_step_1" data-bs-toggle="modal">See examples</a></label>
+                                                <textarea name="the-textarea" id="step_message" maxlength="500" placeholder="Your self-introduction goes here..." autofocus></textarea>
+                                                <div id="the_count">(<span id="current">0</span><span id="maximum_limit">/500</span>)</div>
+                                            </div>
+                                            <div class="text-end w-100">
+                                                <a href="#" class="btn btn_next template-btn primary-btn ml-auto text-white">Submit</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps 2-->
+                            <div class="form_step">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-5">
+                                        <div class="form_step_thumb text-center">
+                                            <img src="assets/images/form/step-2.png" alt="Your Situation" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form_step_content">
+                                            <h2>Your Situation</h2>
+                                            <div class="step_info">
+                                                <img src="assets/images/idea.svg" alt="idea" class="img-fluid" />
+                                                <ul>
+                                                    <li>Please describe a life situation that you want to evaluate.</li>
+                                                    <li>Short facts are more useful than lengthy emotional texts.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form_step_field mn-height-420">
+                                            <div class="input-group">
+                                                <label class="form-label link" for="your-ituation"><a href="#modal_step_2" data-bs-toggle="modal">See examples</a></label>
+                                                <textarea name="the-textarea" id="step_message" maxlength="500" placeholder="Your self-introduction goes here..." autofocus></textarea>
+                                                <div id="the_count">(
+                                                    <span id="current">0</span>
+                                                    <span id="maximum_limit">/ 500</span>
+                                                    )
+                                                </div>
+                                            </div>
+                                            <div class="text-end w-100">
+                                                <a href="#" class="btn btn_next template-btn primary-btn ml-auto text-white">Submit</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps 3-->
+                            <div class="form_step">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-5">
+                                        <div class="form_step_thumb text-center">
+                                            <img src="assets/images/form/step-3.png" alt="Your Situation" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form_step_content">
+                                            <h2>Additional Information</h2>
+                                            <div class="step_info">
+                                                <img src="assets/images/idea.svg" alt="idea" class="img-fluid" />
+                                                <ul>
+                                                    <li>Please answer the questions below to provide us with additional information.</li>
+                                                    <li>Feel free to skip less important or invasive questions </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form_step_field question_field">
+                                            <div class="input-group">
+                                                <label for="queston-1">Question 1</label>
+                                                <input type="text" id="queston-1" name="question-1" placeholder="Your answer here...">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="queston-1">Question 2</label>
+                                                <input type="text" id="queston-2" name="question-2" placeholder="Your answer here...">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="queston-1">Question 3</label>
+                                                <input type="text" id="queston-3" name="question-3" placeholder="Your answer here...">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="queston-1">Question 4</label>
+                                                <input type="text" id="queston-4" name="question-4" placeholder="Your answer here...">
+                                            </div>
+                                            <div class="input-group">
+                                                <label for="queston-1">Question 5</label>
+                                                <input type="text" id="queston-5" name="question-5" placeholder="Your answer here...">
+                                            </div>
+                                            <div class="text-end w-100">
+                                                <a href="#" class="btn btn_next template-btn primary-btn ml-auto text-white">Submit</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps 4-->
+                            <div class="form_step solution_step">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-12">
+                                        <div class="form_step_content">
+                                            <h2 class="title_with_arrow">Strategies <i class="fa-solid fa-arrow-right-long"></i> Actions <i class="fa-solid fa-arrow-right-long"></i> Results</h2>
+                                            <div class="step_info">
+                                                <img src="assets/images/idea.svg" alt="idea" class="img-fluid" />
+                                                <ul>
+                                                    <li>Review the proposed Strategies to handle this Situation</li>
+                                                    <li>Explore possible Actions and their Results</li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion_wrapper">
+                                                <!-- Start AcCordion Items  -->
+                                                <div class="accordion_item">
+                                                    <h2 class="accordion__title">
+                                                        <span class="sub_heading">Strategy 1:</span>
+                                                        Expand Digital Marketing Presence
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </h2>
+                                                    <div class="accordion__content">
+                                                        <!-- nested acordion  -->
+                                                        <div class="accordion_item accordion--nested">
+                                                            <h4 class="accordion__title">
+                                                                <span class="sub_heading">Action 1:</span>
+                                                                Launch a targeted social media campaign.
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </h4>
+                                                            <div class="accordion__content">
+                                                                <span class="sub_heading">Results:</span>
+                                                                <ul class="result_list">
+                                                                    <li>20% increase in website traffic within 2 months.</li>
+                                                                    <li>15% growth in social media followers.</li>
+                                                                    <li>Improved brand recognition in target demographics.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- nested acordion  -->
+                                                        <div class="accordion_item accordion--nested">
+                                                            <h4 class="accordion__title">
+                                                                <span class="sub_heading">Action 2:</span>
+                                                                Implement SEO improvements on the website.
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </h4>
+                                                            <div class="accordion__content">
+                                                                <span class="sub_heading">Results:</span>
+                                                                <ul class="result_list">
+                                                                    <li>20% increase in website traffic within 2 months.</li>
+                                                                    <li>15% growth in social media followers.</li>
+                                                                    <li>Improved brand recognition in target demographics.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- nested acordion  -->
+                                                        <div class="accordion_item accordion--nested">
+                                                            <h4 class="accordion__title">
+                                                                <span class="sub_heading">Action 3:</span>
+                                                                Start a weekly email newsletter.
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </h4>
+                                                            <div class="accordion__content">
+                                                                <span class="sub_heading">Results:</span>
+                                                                <ul class="result_list">
+                                                                    <li>20% increase in website traffic within 2 months.</li>
+                                                                    <li>15% growth in social media followers.</li>
+                                                                    <li>Improved brand recognition in target demographics.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- AcCordion Items  -->
+                                                <div class="accordion_item accordion--open">
+                                                    <h2 class="accordion__title">
+                                                        <span class="sub_heading">Strategy 2:</span>
+                                                        Improve Customer Experience
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </h2>
+                                                    <div class="accordion__content">
+                                                        <!-- nested acordion  -->
+                                                        <div class="accordion_item accordion--nested">
+                                                            <h4 class="accordion__title">
+                                                                <span class="sub_heading">Action 1:</span>
+                                                                Launch a targeted social media campaign.
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </h4>
+                                                            <div class="accordion__content">
+                                                                <span class="sub_heading">Results:</span>
+                                                                <ul class="result_list">
+                                                                    <li>20% increase in website traffic within 2 months.</li>
+                                                                    <li>15% growth in social media followers.</li>
+                                                                    <li>Improved brand recognition in target demographics.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- nested acordion  -->
+                                                        <div class="accordion_item accordion--nested accordion--open">
+                                                            <h4 class="accordion__title">
+                                                                <span class="sub_heading">Action 2:</span>
+                                                                Implement SEO improvements on the website.
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </h4>
+                                                            <div class="accordion__content" style="display: block;">
+                                                                <span class="sub_heading">Results:</span>
+                                                                <ul class="result_list">
+                                                                    <li>20% increase in website traffic within 2 months.</li>
+                                                                    <li>15% growth in social media followers.</li>
+                                                                    <li>Improved brand recognition in target demographics.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- nested acordion  -->
+                                                        <div class="accordion_item accordion--nested">
+                                                            <h4 class="accordion__title">
+                                                                <span class="sub_heading">Action 3:</span>
+                                                                Start a weekly email newsletter.
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </h4>
+                                                            <div class="accordion__content">
+                                                                <span class="sub_heading">Results:</span>
+                                                                <ul class="result_list">
+                                                                    <li>20% increase in website traffic within 2 months.</li>
+                                                                    <li>15% growth in social media followers.</li>
+                                                                    <li>Improved brand recognition in target demographics.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- AcCordion Items  -->
+                                                <div class="accordion_item">
+                                                    <h2 class="accordion__title">
+                                                        <span class="sub_heading">Strategy 3:</span>
+                                                        Boost Employee Productivity
+                                                        <i class="fas fa-angle-down"></i>
+                                                    </h2>
+                                                    <div class="accordion__content">
+                                                        <!-- nested acordion  -->
+                                                        <div class="accordion_item accordion--nested">
+                                                            <h4 class="accordion__title">
+                                                                <span class="sub_heading">Action 1:</span>
+                                                                Launch a targeted social media campaign.
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </h4>
+                                                            <div class="accordion__content">
+                                                                <span class="sub_heading">Results:</span>
+                                                                <ul class="result_list">
+                                                                    <li>20% increase in website traffic within 2 months.</li>
+                                                                    <li>15% growth in social media followers.</li>
+                                                                    <li>Improved brand recognition in target demographics.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- nested acordion  -->
+                                                        <div class="accordion_item accordion--nested">
+                                                            <h4 class="accordion__title">
+                                                                <span class="sub_heading">Action 2:</span>
+                                                                Implement SEO improvements on the website.
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </h4>
+                                                            <div class="accordion__content">
+                                                                <span class="sub_heading">Results:</span>
+                                                                <ul class="result_list">
+                                                                    <li>20% increase in website traffic within 2 months.</li>
+                                                                    <li>15% growth in social media followers.</li>
+                                                                    <li>Improved brand recognition in target demographics.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <!-- nested acordion  -->
+                                                        <div class="accordion_item accordion--nested">
+                                                            <h4 class="accordion__title">
+                                                                <span class="sub_heading">Action 3:</span>
+                                                                Start a weekly email newsletter.
+                                                                <i class="fas fa-angle-down"></i>
+                                                            </h4>
+                                                            <div class="accordion__content">
+                                                                <span class="sub_heading">Results:</span>
+                                                                <ul class="result_list">
+                                                                    <li>20% increase in website traffic within 2 months.</li>
+                                                                    <li>15% growth in social media followers.</li>
+                                                                    <li>Improved brand recognition in target demographics.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END AcCordion Items  -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 pt-4 mt-2">
+                                        <div class="form_step_content form_step_related_service">
+                                            <h2>Relevant Products and Services:</h2>
+                                            <div class="step_info">
+                                                <img src="assets/images/idea.svg" alt="idea" class="img-fluid" />
+                                                <ul>
+                                                    <li>Review the proposed Strategies to handle this Situation</li>
+                                                    <li>Explore possible Actions and their Results</li>
+                                                </ul>
+                                            </div>
+                                            <div class="related_service_product pt-2">
+                                                <h2>Products:</h2>
+                                                <div class="row g-4 pb-2">
+                                                    <div class="col-md-4">
+                                                        <div class="related_service_item">
+                                                            <h3>AI-Driven Customer Insights Tool</h3>
+                                                            <p>Uses machine learning to analyze customer data and deliver personalized recommendations.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="related_service_item">
+                                                            <h3>E-commerce Dashboard</h3>
+                                                            <p>A centralized platform for managing inventory, sales, and customer interactions in real time.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="related_service_item">
+                                                            <h3>CRM Software</h3>
+                                                            <p>Streamlines customer relationship management, providing sales automation and communication tools.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="related_service_service pt-2">
+                                                <h2 class="mt-4">Services:</h2>
+                                                <div class="row g-4">
+                                                    <div class="col-md-4">
+                                                        <div class="related_service_item">
+                                                            <h3>Website Design and Development</h3>
+                                                            <p>End-to-end web design, development, and maintenance for businesses looking to enhance their online presence.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="related_service_item">
+                                                            <h3>Digital Marketing Consultation</h3>
+                                                            <p>Tailored strategies for SEO, PPC, and social media to grow your online reach.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="related_service_item">
+                                                            <h3>Custom Software Solutions</h3>
+                                                            <p>Development of bespoke software tailored to meet unique business requirements and workflows.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-end w-100 mt-4">
+                                            <a href="#" class="btn btn_next template-btn primary-btn ml-auto text-white">Next</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps 5-->
+                            <div class="form_step">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-5">
+                                        <div class="form_step_thumb text-center">
+                                            <img src="assets/images/form/step-5.png" alt="Your Situation" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="form_step_content">
+                                            <h2>We want to know what you think about our demo!</h2>
+                                            <div class="step_info">
+                                                <img src="assets/images/idea.svg" alt="idea" class="img-fluid" />
+                                                <ul>
+                                                    <li>We will improve our design and user experience based on your feedback.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form_step_field feedback_switch">
+                                            <div class="input-group">
+                                                <h4>Did you find our recommendations useful?</h4>
+                                                <div class="input_radio_field">
+                                                    <p>
+                                                        <input type="radio" id="nUseful" name="recommendations_usefull" value="no" checked>
+                                                        <label for="nUseful">No</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="radio" id="yUseful" name="recommendations_usefull" value="yes">
+                                                        <label for="yUseful">Yes</label>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <h4>Did you learn anything new regarding your situation?</h4>
+                                                <div class="input_radio_field">
+                                                    <p>
+                                                        <input type="radio" id="nSituation" name="learned_anything_new" value="no" checked>
+                                                        <label for="nSituation">No</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="radio" id="ySituation" name="learned_anything_new" value="yes">
+                                                        <label for="ySituation">Yes</label>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <h4>Are recommended products and services relevant?</h4>
+                                                <div class="input_radio_field">
+                                                    <p>
+                                                        <input type="radio" id="nRelevant" name="products_and_services_relevant" value="no" checked>
+                                                        <label for="nRelevant">No</label>
+                                                    </p>
+                                                    <p>
+                                                        <input type="radio" id="yRelevant" name="products_and_services_relevant" value="yes">
+                                                        <label for="yRelevant">Yes</label>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="input-group">
+                                                <h4>Suggest one thing you want to improve in our product. We will do this for you!</h4>
+                                                <div class="input-group">
+                                                    <textarea name="your_suggestion" id="step_message" maxlength="500" placeholder="Share your thoughts here..." autofocus></textarea>
+                                                    <div id="the_count">(
+                                                        <span id="current">0</span>
+                                                        <span id="maximum_limit">/ 500</span>
+                                                        )
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-end w-100">
+                                                <a href="#" class="btn btn_next template-btn primary-btn ml-auto text-white">Submit</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Steps 6-->
+                            <div class="form_step final_submition mx-auto">
+                                <div class="row g-5 g-md-4">
+                                    <div class="col-md-12 pt-3">
+                                        <div class="form_step_thumb">
+                                            <img src="assets/images/form/step-6.png" alt="Your Situation" class="img-fluid">
+                                        </div>
+                                        <div class="form_step_content">
+                                            <h2>Thanks for your feedback!</h2>
+                                            <p class="mx-auto">Please provide us with your email to get informed about our full featured product launch:</p>
+                                        </div>
+                                        <div class="form_step_field question_field subscribe_field">
+                                            <form action="#" method="post" class="subscribe_form" id="subscribe_form">
+                                                <div class="input-group">
+                                                    <input type="email" id="email" name="user-email" placeholder="Your email.." required>
+                                                    <button type="submit" class="btn template-btn primary-btn ml-auto text-white">Submit</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- End Steps  -->
+                    </form>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- Funnel works End  -->
+
+
+        <!--modal popup start-->
+        
+        <!-- Modal for step 1-->
+        <div class="modal fade step_modal" id="modal_step_1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>How other users describe themselves:</h3>
+                        <ul>
+                            <li>28-year-old software engineer, avid rock climber, and dog owner living in Seattle.</li>
+                            <li>College student majoring in biology, part-time barista, and amateur photographer. I live in the midwest.</li>
+                            <li>Stay-at-home parent of twins, former accountant, passionate about gardening and cooking.</li>
+                            <li>Retired military veteran, current small business owner, and classic car enthusiast.</li>
+                            <li>Coding monkey by day, rock-scaling junkie by night. Barking roommate in tow. The Sierra mountains are my backyard.</li>
+                            <li>High school teacher specializing in physics, weekend gamer, and aspiring novelist.</li>
+                            <li>Male, 28 yo, live in Boston. College dropout. Love dogs. Single. Not very happy with my life.</li>
+                            <li>32 yo single mom of a autistic child. Live in NYC with my parents. Fighting with life for my future happiness.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal for step 1 end-->
+
+        <!-- Modal for step 2-->
+        <div class="modal fade step_modal" id="modal_step_2">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>Situations that other users want to explore:</h3>
+                        <ul>
+                            <li>I'm dating a person of different religion and race. My parents are furious about our relationship.</li>
+                            <li>I've been living paycheck-to-paycheck for many years. Need to change this somehow.</li>
+                            <li>I just found out my long-term partner has been hiding a massive gambling debt from me.</li>
+                            <li>My boss offered me a promotion, but it would require relocating to a city I hate.</li>
+                            <li>I'm considering dropping out of medical school to pursue my passion for art.</li>
+                            <li>My best friend confessed they're in love with me, but I don't feel the same way.</li>
+                            <li>I accidentally discovered that my child isn't biologically mine through a DNA test kit.</li>
+                            <li>I'm thinking about quitting my stable job to start a business, but I have no savings.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--modal for step 2 end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--footer section start-->
+        <footer class="st_footer_section overflow-hidden position-relative pt-90">
+            <div class="container-fluid p-0">
+                <div class="st_footer_content">
+                    <h2 class="mb-3">We always want to hear <br> from you!</h2>
+                    <p>Feel free to send us a message, share your <br> thoughts, report a bug or propose a feature.</p>
+                    <hr class="st_line_seperator">
+                </div>
+                <div class="st_footer_bottom d-flex">
+                    <div class="st_footer_copyright">
+                        <p class="mb-0">Copyright (©) 2024 by Situations, Inc.</p>
+                    </div>
+                    <div class="st_footer_widget">
+                        <a href="index.html"><img src="assets/images/footer-logo.png" alt="logo" class="st_footer_logo img-fluid" ></a>
+                        <ul class="st_footer_nav">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="st_footer_contact">
+                        <p>Contact us:</p>
+                        <a href="mailto:contact@situations.me">contact@situations.me</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer section end-->
+
+    </main>
+
+    <!-- Mobile Header  Start-->
+    <section class="popup_menubar_sec">
+        <div class="popup_menubar_overlay"></div>
+        <div class="pop_menubar_background">
+            <div class="popMenubarArea">
+                <div class="popMenu_top">
+                    <div class="menu_pop_logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <a href="javascript:void(0);" id="popup_nav_Closer"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="dfNav_popupWrapper">
+                    <nav class="menubar_popup">
+                        <ul class="main_mobile_menu d-flex align-items-center">
+                            <li><a class="scroll" href="home.html#how_it_works">How it works</a></li>
+                            <li><a class="scroll" href="home.html#how_different">How we're different</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menuPopup_btn d-flex gap-3 align-items-center justify-content-center">
+                        <a href="https://situations-596dcd59e0eb.herokuapp.com/" target="_blank" class="template-btn primary-btn">Try our prototype</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Mobile Header END -->
+
+    <a id="scroll_top" class="scroll-top" style="display: block; transform: scale(1);"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+
+
+
+
+
+    <!--essentail scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
